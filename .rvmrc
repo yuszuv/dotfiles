@@ -1,0 +1,2 @@
+export USE_BUNDLER=force
+rvm_project_rvmrc_default=1
