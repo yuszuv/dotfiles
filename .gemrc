@@ -1,2 +1,3 @@
-install: --no-ri --no-rdoc
-update: --no-ri --no-rdoc
+# dont't install rdocs when installing gems
+#install: --no-ri --no-rdoc
+#update: --no-ri --no-rdoc

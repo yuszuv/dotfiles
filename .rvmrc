@@ -1,2 +1,4 @@
 export USE_BUNDLER=force
+
+# switching back to default ruby when leaving a directory
 rvm_project_rvmrc_default=1

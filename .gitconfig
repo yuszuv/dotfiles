@@ -4,8 +4,8 @@
 [alias]
 	co = checkout
 	st = status
-  br = branch
-  lo = log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
+	br = branch
+	lo = log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
 [core]
 	editor = vim
 	excludesfile = /home/jan/.gitignore
