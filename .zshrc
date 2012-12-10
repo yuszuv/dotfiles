@@ -7,7 +7,8 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="jreese"
-ZSH_THEME="random"
+#ZSH_THEME="random"
+ZSH_THEME="fletcherm"
 
 
 # Example aliases
@@ -32,7 +33,7 @@ ZSH_THEME="random"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git nyan)
+plugins=(git nyan git-flow)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -50,9 +51,9 @@ esac
 eval `dircolors -b $HOME/.dircolors`
 
 # setting $EDITOR
-if [[ -x $(which gvim) ]]
+if [[ -x $(which vim) ]]
 then
-	export EDITOR="gvim"
+	export EDITOR="vim"
 	export USE_EDITOR=$EDITOR
 	export VISUAL=$EDITOR
 fi
@@ -68,9 +69,16 @@ fi
 # unused stuff of old system
 #alias cdrails='cd /var/www/rails_projects'
 
+
+alias qeo='setxkbmap de neo -option; xmodmap ~/bin/qeo.csv'
+alias qwe='setxkbmap de -option'
+
 # setting CDPATH for simpler cd-ing 
 #export CDPATH=/home/jan/rails/
 
 # changing the cd +-n behaviour
 #setopt PUSHD_MINUS
 
+#disabling autocompletion
+#yountlabs.com/automation/disable-autocorrect-in-zsh/
+unsetopt correct_all
